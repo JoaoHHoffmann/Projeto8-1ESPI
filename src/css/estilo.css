@@ -88,4 +88,18 @@ section{
         height: auto;
         max-height: 200px;
     }
+    #bt-menu{
+        display: none;
+    }
+    label[for="bt-menu"]{
+        display: block;
+    }
+    #bt-menu:checked~nav{
+        margin-left: 0;
+    }
+    nav{
+        margin-top: 5px;
+        margin-left: -100%;
+        transition: all 0.5s;
+    }
 }
